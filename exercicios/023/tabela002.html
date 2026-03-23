@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    p {
+        text-align: justify;
+        font: 1em Arial, Helvetica, sans-seri;
+        
+    }
+
+    table {
+        width: 500px;
+        border-collapse: collapse;
+        position: relative;
+    }
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 10px;
+        background-color: lightgrey;
+        
+    }
+    thead > tr > th {
+        position: sticky;
+        top: 0;
+        background-color: rgb(36, 36, 36);
+    }
+
+    td, th {
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead, tfoot {
+        background-color: rgb(36, 36, 36);
+        color: white;
+    }
+
+    tbody > tr:nth-child(odd) {
+        background-color: rgb(130, 130, 130);
+    }
+    tbody > tr:nth-child(even) {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .rum {
+        text-align: right;
+    }
+</style>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA DE UMA TABELA GRANDES
+        TABLE
+            CAPTION = título da tabela
+            THEAD = cabeçalho da tabela
+                TR = linha da tabela
+                TH = célula do cabeçalho da tabela
+                TD = célula da tabela
+
+            TBODY = corpo da tabela
+                TR = linha da tabela
+                TH = célula do cabeçalho da tabela
+                TD = célula da tabela
+
+             TFOOT = rodapé da tabela
+                TR = linha da tabela
+                TH = célula do cabeçalho da tabela
+                TD = célula do rodapé da tabela
+    -->
+
+    <Table>
+        <caption>População das Unidades Federais</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="rum">45.919.049</td>
+            </tr>
+
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="rum">21.292.666</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="rum">17.366.189</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="rum">14.930.634</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="rum">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="rum">11.422.973</td>
+            </tr>
+                <tr>
+                    <td>Pernambuco</td>
+                    <td class="rum">9.616.621</td>
+                </tr>
+                 <tr>
+                    <td>Ceará</td>
+                    <td class="rum">9.240.580</td>
+                </tr>
+                 <tr>
+                    <td>Para</td>
+                    <td class="rum">8.690.745</td>
+                <tr>
+                    <td>Santa Catarina</td>
+                    <td class="rum">7.252.502</td>
+                <tr>
+                <tr>
+                    <td>Maranhão</td>
+                    <td class="rum">7.153.262</td>
+                </tr>
+                    <td>Goiás</td>
+                    <td class="rum">3.567.234</td>
+                </tr>
+                <tr>
+                    <td>Amazonas</td>
+                    <td class="rum">4.144.621</td>
+                </tr>
+                <tr>
+                    <td>Espírito Santo</td>
+                    <td class="rum">3.578.067</td>
+                </tr>
+                <tr>
+                    <td>Paraíba</td>
+                    <td class="rum">3.286.314</td>
+                </tr>
+                <tr>
+                    <td>Rio Grande do Norte</td>
+                    <td class="rum">3.534.165</td>
+                </tr>
+                <tr>
+                    <td>Mato Grosso</td>
+                    <td class="rum">3.526.220</td>
+                </tr>
+                 <tr>
+                    <td>Alagoas</td>
+                    <td class="rum">3.351.543</td>
+                </tr>
+                <tr>
+                    <td>Piauí</td>
+                    <td class="rum">3.281.480</td>
+                </tr>
+                <tr>
+                    <td>Distrito Federal</td>
+                    <td class="rum">3.055.149</td>
+                </tr>
+                 <tr>
+                    <td>Mato grosso do dul</td>
+                    <td class="rum">3.526.220</td>
+                </tr>
+                <tr>
+                    <td>Sergipe</td>
+                    <td class="rum">2.318.822</td>
+                </tr>
+                 <tr>
+                    <td>Rondônia</td>
+                    <td class="rum">1.815.278</td>
+                </tr>
+                 <tr>
+                    <td>Tocantins</td>
+                    <td class="rum">1.572.866</td>
+                </tr>
+                <tr>
+                    <td>Acre</td>
+                    <td class="rum">906.876</td>
+                </tr>
+                <tr>
+                    <td>Amapá</td>
+                    <td class="rum">861.773</td>
+                </tr>
+                <tr>
+                    <td>Roraima</td>
+                    <td class="rum">631.181</td>
+                </tr>
+                
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de habitantes</th>
+                <td><strong>211.755.692</strong></td>
+            </tr>
+        </tfoot>
+    </Table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo ex commodi vitae iste cum. Non dignissimos tenetur, officia explicabo ratione architecto aliquid tempora cumque inventore vitae ipsa exercitationem distinctio maiores?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis repellat ut accusantium. Nulla optio illo rem adipisci debitis id, neque unde ea sunt nihil ratione dolorum inventore quas vero amet?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima saepe illum magnam nulla atque quo esse exercitationem excepturi assumenda laborum sunt consectetur nostrum natus nihil adipisci, corporis officia blanditiis architecto.</p>
+   
+</html>

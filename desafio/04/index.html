@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2 de Tabela</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+    table {
+        border-collapse: collapse;  
+    }
+
+     td, th {
+        border: 1px solid black;
+        width: 100px;
+        padding: 10px;
+    }
+
+    th {
+        background-color: #646464;
+        color: white;
+    }
+
+    .media {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .Disciplinas {
+        text-align: center;
+        background-color: #ffffff;
+        color: #000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .materia {
+        text-align: left;
+        background-color: white;
+        color: #000;
+    }
+
+    .total-media {
+        text-align: left;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .total {
+        text-align: center;
+        font-weight: bold;
+        background-color:  #646464;
+        color: white;
+    }
+
+    .valor {
+        text-align: center;
+        
+    }
+</style>
+<body>
+
+    <table>
+        <thead>
+            
+            <tr>
+                <th class="media" rowspan="2" scope="row">Área</th>
+                <th class="media" colspan="3" rowspan="2" scope="row">Disciplinas</th>
+                <th class="media" colspan="2" scope="colgroup">Notas</th>
+                <th class="media" rowspan="2" scope="row">Média</th>
+                
+            </tr>
+            <tr>
+                <th class="media" scope="col">Nota 1</th>
+                <th class="media" scope="col">Nota 2</th>
+                
+              
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th class="Disciplinas" rowspan="4" scope="colgroup">Exatas</th>
+
+                <th class="materia" colspan="3" scope="col">Matemática</th>
+               
+
+                <td class="valor">8.0</td>
+                <td class="valor">7.5</td>
+                <td class="valor">9.0</td>
+            </tr>
+            <tr>
+                    
+                <th class="materia" colspan="3" scope="col">Física</th>
+
+                <td class="valor">7.0</td>
+                <td class="valor">6.5</td>
+                <td class="valor">8.0</td>
+                
+            </tr>
+            <tr>
+                <th class="materia" colspan="3" scope="col">Química</th>
+
+                <td class="valor">6.0</td>
+                <td class="valor">5.5</td>
+                <td class="valor">7.0</td>
+                
+            </tr>
+            <tr>
+                <th class="materia" colspan="3" scope="col">Biologia</th>
+                <td class="valor">5,5</td>
+                <td class="valor">6,0</td>
+                <td class="valor">7,0</td>
+            </tr>
+            <tr>
+                <th class="total-media" colspan="6" scope="colgroup">Média de Exatas</th>
+                <td class="total">12,0</td>
+                
+            </tr>
+
+
+
+
+
+
+             <tr>
+                <th class="Disciplinas" rowspan="2" scope="rowgroup">Humanas</th>
+
+                <th class="materia"  colspan="3" scope="col">História</th>
+
+                <td class="valor">9.0</td>
+                <td class="valor">8.5</td>
+                <td class="valor">9.5</td>
+                
+            </tr>
+            <tr>
+                <th class="materia" colspan="3" scope="col">Geografia</th>
+
+                <td class="valor">8.0</td>
+                <td class="valor">7.5</td>
+                <td class="valor">8.5</td>
+              
+            </tr>
+            
+        </tbody>
+        <tfoot>
+            <tr>
+                <th class="total-media" colspan="6" scope="colgroup">Média de Humanas</th>
+                <td class="total">18,0</td>
+                
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
